@@ -1,0 +1,17 @@
+body {
+    background: #222;
+    font-family: sans-serif;
+}
+main {
+    max-width: 800px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.answer {
+    padding: 25px;
+
+    font-size: 1.3em;
+}   
