@@ -15,6 +15,6 @@ check.addEventListener('click', palindromo = () =>{
     console.log(txt)
 
     word.focus()
-    word = ''
+    word.value = ""
 })
 
