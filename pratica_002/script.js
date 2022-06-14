@@ -10,7 +10,6 @@ const  generateRandomString = (num) => {
     return result1;
 }
 
-
 const isPalindromo = (n) =>{
     let txt = n.split('').reverse().join('')
     if (txt == n) return true
