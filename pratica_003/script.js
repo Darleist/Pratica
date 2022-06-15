@@ -16,12 +16,11 @@ function time () {
 
 function attMin () {
     let currentDate = new Date()
-    let b = new Date("June 14, 2022 19:59:00"); //aquí vc deve mudar o minuto
-    let c = (((b - currentDate)/1000)/60);
-    c = Math.round(c)
+    let less = new Date("June 14, 2022 20:59:00"); //aquí vc deve mudar o minuto
+    let lessMinutes = (((less - currentDate)/1000)/60);
+    lessMinutes = Math.round(lessMinutes)
     
-    console.log(`Faltan ${c} minutos`) 
-    console.log(b)
+    console.log(`Faltan ${lessMinutes} minutos`) 
 }
 
 setInterval(() => {
