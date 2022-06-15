@@ -13,7 +13,6 @@ function time () {
     
     console.log(`Son las ${hour}:${min}:${sec} del día ${day}/${month}/${year}`)
 }
-time()
 
 function attMin () {
     let currentDate = new Date()
