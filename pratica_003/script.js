@@ -4,14 +4,14 @@ function addZero(num) {
 }
 
 function time () {
-        let year = new Date().getFullYear()
-        let month = addZero(new Date().getMonth() + 1)
-        let day = addZero(new Date().getDate())
-        let hour = addZero(new Date().getHours())
-        let min = addZero(new Date().getMinutes())
-        let sec = addZero(new Date().getSeconds())
-        
-        console.log(`Son las ${hour}:${min}:${sec} del día ${day}/${month}/${year}`)
+    let year = new Date().getFullYear()
+    let month = addZero(new Date().getMonth() + 1)
+    let day = addZero(new Date().getDate())
+    let hour = addZero(new Date().getHours())
+    let min = addZero(new Date().getMinutes())
+    let sec = addZero(new Date().getSeconds())
+    
+    console.log(`Son las ${hour}:${min}:${sec} del día ${day}/${month}/${year}`)
 }
 time()
 
