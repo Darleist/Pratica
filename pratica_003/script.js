@@ -14,17 +14,16 @@ function time () {
     console.log(`Son las ${hour}:${min}:${sec} del día ${day}/${month}/${year}`)
 }
 
-function attMin () {
-    let currentDate = new Date()
-    let less = new Date("June 14, 2022 22:10:00"); //aquí vc deve mudar o minuto
-    let lessMinutes = (((less - currentDate)/1000)/60);
-    lessMinutes = Math.round(lessMinutes)
-    
-    console.log(`Faltan ${lessMinutes} minutos`) 
+function getDiffInMinutesFromNow(date) {
+    const currentDate = new Date()
+    const diffInMinutes = (((date - currentDate)/1000)/60);
+    return Math.round(diffInMinutes)
 }
 
 setInterval(() => {
-        console.clear()
-        time()
-        attMin()
-    }, 1000);
+    console.clear()
+    time()
+    const dateToCompare = new Date("June 14, 2022 22:10:00")
+    const diff = getDiffInMinutesFromNow(dateToCompare)
+    console.log(diff)
+}, 1000);
