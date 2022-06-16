@@ -27,8 +27,7 @@ function setMsg (minutes){
     else if (minutes === 0) console.log('En menos de un minuto atrás')
     else if (minutes < -1 && minutes > -65) console.log('Aproximadamente una hora atrás')
     else if (minutes < -65) {
-        hours = Math.round(minutes/60)
-        //hours.split('').remove().join('')
+        hours = (Math.round(minutes/60)) * -1 //multiplicação por -1 é para eliminar o sinal negativo  da frase abaixo
         console.log(`A ${hours} horas atrás`)
     }
 }
