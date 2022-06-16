@@ -24,9 +24,9 @@ function setMsg (minutes){
         if (minutes === 1) console.log(`En un minuto`)
         else console.log(`En ${minutes} minutos`)
     }
-    else if (minutes === 0) console.log('En menos de un minuto atrás')
-    else if (minutes < -1 && minutes > -65) console.log('Aproximadamente una hora atrás')
-    else if (minutes < -65) {
+    else if (minutes === 1) console.log('En menos de un minuto atrás')
+    else if (minutes <= -1 && minutes > -65) console.log('Aproximadamente una hora atrás')
+    else if (minutes <= -65) {
         hours = (Math.round(minutes/60)) * -1 //multiplicação por -1 é para eliminar o sinal negativo  da frase abaixo
         console.log(`A ${hours} horas atrás`)
     }
@@ -35,7 +35,7 @@ function setMsg (minutes){
 setInterval(() => {
     console.clear()
     time()
-    const dateToCompare = new Date("June 15, 2022 00:09:00")
+    const dateToCompare = new Date("June 16, 2022 08:52:00")
     const diff = getDiffInMinutesFromNow(dateToCompare)
     setMsg(diff)
 }, 1000);
